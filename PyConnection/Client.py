@@ -15,7 +15,7 @@ def initClient(host, port, msg_env, password):
 
 
 if __name__ == '__main__':
-    host = '172.23.65.138'
+    host = '25.14.79.15'
     port = 44440
     msg = ""
     while True:
