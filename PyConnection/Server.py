@@ -25,14 +25,14 @@ def initServer(host, port):
         msg_recv = decode(msg_recv, setEncoding('352'))
         print(msg_recv)
         c.close()
-    #     bandera = False
-    # # segunda parte, conectarse a otro servidor...
-    # host = ''
-
-    # initClient(host, port, msg_recv)
+        bandera = False
+    # segunda parte, conectarse a otro servidor...
+    host = '25.14.79.15'
+    port = 9090
+    initClient(host, port, msg_recv, '759')
 
 
 if __name__ == "__main__":
-    host = '25.7.98.255'
+    host = '25.10.252.91'
     port = 44440
     initServer(host, port)
