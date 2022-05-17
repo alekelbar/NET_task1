@@ -1,11 +1,13 @@
 
 
 def setEncoding(encoding):
-    if len(encoding) > 3 or len(encoding) <= 0:
-        raise Exception("Invalid encoding, out of range  [0,3]")
+    if len(encoding) < 2:
+        raise Exception("Invalid encoding, out of range  [2,n]")
     password = []
-    index = 0
     for number in encoding:
-        password.append(int(number))
-        index += 1
+        try:
+            convertion = int(number)
+        except Exception as error:
+            raise Exception("Invalid value for encoding", error)
+        password.append(convertion)
     return password
