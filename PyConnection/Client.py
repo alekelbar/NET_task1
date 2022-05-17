@@ -15,8 +15,8 @@ def initClient(host, port, msg_env, password):
 
 
 if __name__ == '__main__':
-    host = '25.14.79.15'
-    port = 8080
+    host = '25.51.188.247'
+    port = 5000
     msg = ""
     while True:
         msg = input("Digite el mensaje a enviar: ")

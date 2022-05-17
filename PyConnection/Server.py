@@ -27,8 +27,8 @@ def initServer(host, port):
         c.close()
         bandera = False
     # segunda parte, conectarse a otro servidor...
-    host = '25.14.79.15'
-    port = 9090
+    host = '25.51.188.247'
+    port = 5000
     initClient(host, port, msg_recv, '759')
 
 
